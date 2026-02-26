@@ -1,7 +1,7 @@
 # 🦵 Subsistema: Actuador de Acelerador
 
 ![Estado](https://img.shields.io/badge/Estado-En%20documentación-yellowgreen)
-![Motor](https://img.shields.io/badge/Motor-NEMA%2027%20Oukeda-blue)
+![Motor](https://img.shields.io/badge/Motor-Oukeda%200K57H18112A--420--8--21B-blue)
 ![Encoder](https://img.shields.io/badge/Encoder-AS5600%2012bit-purple)
 ![Fabricación](https://img.shields.io/badge/Estructura-Perfil%20aluminio%20Item-orange)
 
@@ -56,8 +56,8 @@ El encoder AS5600 lee la posición angular del eje del motor, el controlador cal
 
 | Parámetro | Valor | Fuente |
 |---|---|---|
-| Motor | Paso a paso bifásico bipolar NEMA 27 — familia Oukeda | Árbol CAD `nema 27.STEP` |
-| Cara de montaje del motor | 68.6 × 68.6 mm | Estándar NEMA 27 |
+| Motor | Paso a paso bifásico bipolar — Oukeda **0K57H18112A-420-8-21B** | Etiqueta física del motor |
+| Cara de montaje del motor | 68.6 × 68.6 mm | Árbol CAD `nema 27.STEP` — NEMA 27 |
 | Ángulo de paso | 1.8° (200 pasos/revolución) | Estándar NEMA 27 |
 | Encoder | AS5600 — magnético absoluto 12 bits | Árbol CAD `AS5600` |
 | Resolución del encoder | 4096 posiciones/revolución | Datasheet AS5600 |
@@ -73,7 +73,8 @@ El encoder AS5600 lee la posición angular del eje del motor, el controlador cal
 | Finales de carrera | Endstop mecánico ×2 (límite mínimo y máximo) | Árbol CAD |
 | Ventilador de refrigeración | 50×50×11 mm (12 V o 24 V ⚠️ por confirmar) | Árbol CAD |
 | Orificio de montaje | M6 (radio 3 mm) | Medición SolidWorks |
-| Modelo exacto del motor | ⚠️ Por confirmar con datasheet físico | — |
+| Modelo exacto del motor | **0K57H18112A-420-8-21B** | Etiqueta física del motor |
+| Cableado del motor | A+ Rojo · A− Verde · B+ Amarillo · B− Azul | Etiqueta física del motor |
 
 ---
 
@@ -81,7 +82,7 @@ El encoder AS5600 lee la posición angular del eje del motor, el controlador cal
 
 | # | Componente | Descripción | Cantidad | Especificaciones técnicas | Notas |
 |---|---|---|---|---|---|
-| 1 | Motor NEMA 27 Oukeda | Motor paso a paso que genera el movimiento rotacional del actuador | 1 | Bifásico bipolar · 1.8°/paso · 200 pasos/rev · Cara 68.6×68.6 mm · ⚠️ Modelo exacto por confirmar | Ver datasheet físico del fabricante |
+| 1 | Motor Oukeda 0K57H18112A-420-8-21B | Motor paso a paso NEMA 27 que genera el movimiento rotacional del actuador | 1 | Bifásico bipolar · 1.8°/paso · 200 pasos/rev · Cara 68.6×68.6 mm · A+(Rojo) A−(Verde) B+(Amarillo) B−(Azul) | Modelo confirmado por etiqueta física |
 | 2 | Encoder AS5600 | Encoder magnético absoluto para retroalimentación de posición (lazo cerrado) | 1 | 12 bits (4096 pos/rev) · I²C/PWM · 3.3–5 V | Montado sobre el eje del motor |
 | 3 | Varilla roscada M8 | Husillo que convierte el movimiento rotacional en lineal | 1 | Métrica M8 · Longitud ⚠️ por confirmar | Acero |
 | 4 | Tuerca anti-juego Delrin | Tuerca de poliacetal que minimiza el backlash del husillo | 4 | Modelo `Delrin dual 5×24×11` | Diseño típico en CNC bajo costo |
