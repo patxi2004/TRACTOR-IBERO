@@ -95,7 +95,7 @@ TRACTOR/
 
 ## Cómo citar este proyecto
 
-Si utilizas este trabajo en una publicación académica, por favor cítalo de la siguiente manera:
+"Para una publicación académica, por favor cítar de la siguiente manera:"
 
 ```bibtex
 @misc{ochoa_gonzalez_2026,
